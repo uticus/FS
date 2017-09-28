@@ -8,7 +8,6 @@ class Admin::UsersController < ApplicationController
 
     def new
          @user = User.new
-#         @user.registered = DateTime.current
     end
     
     def create

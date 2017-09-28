@@ -5,7 +5,7 @@ create new user
 
 
 
-<%= form_for :user do |form| %>
+<%= form_for @user, url: admin_users_path do |form| %>
 <p>
   <%= form.label 'User Name' %>
   <%= form.text_field :name %>

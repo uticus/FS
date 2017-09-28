@@ -6,7 +6,6 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string :name
       t.string :description
       t.string :manager
-      t.datetime :registered
 
       t.timestamps
     end

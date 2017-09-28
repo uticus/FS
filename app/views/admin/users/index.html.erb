@@ -11,7 +11,6 @@ Users
 	<th>name</th>
 	<th>description</th>
 	<th>manager</th>
-	<th>registered</th>
 </tr>
 <% @users.each do |user| %>
 <tr>
@@ -20,7 +19,6 @@ Users
 	<td><%= user.name %></td>
 	<td><%= user.description %></td>
 	<td><%= user.manager %></td>
-	<td><%= user.registered %></td>
 </tr>>
 <% end %>
 </table>
