@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  api_key: MyString
+  name: MyString
+  description: MyString
+  manager: MyString
+  registered: 2017-09-28 11:54:09
+
+two:
+  email: MyString
+  api_key: MyString
+  name: MyString
+  description: MyString
+  manager: MyString
+  registered: 2017-09-28 11:54:09

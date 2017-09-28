@@ -1,0 +1,12 @@
+
+
+<h1>
+create new face
+</h1>
+
+<%= form_for @face, url: faces_path, html: { multipart: true } do |form| %>
+  <%= form.file_field :image %>
+  
+  
+  <%= form.submit 'save' %>
+<% end %>

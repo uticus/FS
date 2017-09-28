@@ -1,0 +1,15 @@
+class User < ApplicationRecord
+	before_create :generate_api_key
+
+	protected
+
+	def generate_api_key
+		self.api_key = loop do 
+			random_token = SecureRandom.urlsafe_base64(24,false)
+			break random_token unless self.class.exist?(api_key: random_token)
+			
+		end
+	end
+
+	
+end

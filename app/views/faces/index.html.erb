@@ -1,0 +1,11 @@
+
+<h1>
+faces list
+</h1>
+
+
+<ul>
+<% @faces.each do |face| %>
+<li> <%= image_tag face.image.url(:thumb) %> </li>
+<% end %>
+</ul>

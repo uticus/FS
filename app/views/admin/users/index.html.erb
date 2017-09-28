@@ -1,0 +1,27 @@
+
+<h1>
+Users
+</h1>
+
+
+<table>
+<tr>
+	<th>email</th>
+	<th>api_key</th>
+	<th>name</th>
+	<th>description</th>
+	<th>manager</th>
+	<th>registered</th>
+</tr>
+<% @users.each do |user| %>
+<tr>
+	<td><%= user.email %></td>
+	<td><%= user.api_key %></td>
+	<td><%= user.name %></td>
+	<td><%= user.description %></td>
+	<td><%= user.manager %></td>
+	<td><%= user.registered %></td>
+</tr>>
+<% end %>
+</table>
+
