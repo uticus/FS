@@ -16,7 +16,7 @@ class FacesController < ApplicationController
         #binding.pry
     end
     
-    
+  
     
     def face_params
         params.require( :face ).permit( :image )

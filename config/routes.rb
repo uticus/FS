@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   	  namespace :v4 do
   	      resources :faces
 
+  	      get 'face/analyze' => 'faces#analyze'
+
   	      resources :sessions, only: :create
       end
   end
